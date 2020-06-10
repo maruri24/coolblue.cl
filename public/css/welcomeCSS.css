@@ -1,0 +1,57 @@
+#blackLayer{
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,.9);
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: 21;
+}
+.header{
+    position: relative;
+    z-index: 12;
+    height: 100vh;
+}
+.header h1,h2{
+    font-family: 'Jost', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+.header h2{
+    font-size: 1.2em;
+    color: rgba(255,255,255,.7);
+}
+.header h1{
+    font-size: 2.2em;
+    color: white;
+}
+#myVideo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+.blur{
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,.6);
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: 11;
+}
+@media (min-aspect-ratio: 16/9) {
+    #myVideo {
+        height: 300%;
+        top: -100%;
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    #myVideo {
+        width: 300%;
+        left: -100%;
+    }
+}

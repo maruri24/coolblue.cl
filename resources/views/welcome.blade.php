@@ -28,11 +28,13 @@
 
 <script>
     $(function(){
-        var windowHeight = $(window).height();
-        var contenidoHeight = $(".contenido").height();
+        document.ready(function(){
+            var windowHeight = $(window).height();
+            var contenidoHeight = $(".contenido").height();
 
-        $(".contenido").css('top', (windowHeight - contenidoHeight) - 50 +'px');
-    })
+            $(".contenido").css('top', (windowHeight - contenidoHeight) - 50 +'px');
+        });
+    });
 </script>
 </body>
 </body>
